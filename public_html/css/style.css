@@ -1,0 +1,103 @@
+/* CSS Document */
+
+/* 
+	Purple: #4B2E83
+	Gold: #B7A57A
+	Metallic Gold: #85754D
+*/
+
+body {
+	background-color: white;
+	color:black;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	line-height: 1.5em;
+	margin:0;
+}
+
+.container {
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+}
+
+#main-header {
+	background-color: #4B2E83;
+	color:white;
+}
+
+#navbar {
+	background-color: #85754D;
+}
+
+#navbar ul {
+	padding: 0;
+	list-style: none;
+}
+
+#navbar li {
+	display: inline;
+	border-left: 1px solid #ccc;
+	margin: .25em;
+	padding: 2px 1.5em;
+
+}
+
+#navbar li:first-child {
+	border-left: none;
+}
+
+
+#navbar a {
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	padding-right: 15px;
+}
+
+#showcase {
+	background-image:url("../resources/images/UW.jpg");
+	background-position: top left;
+	min-height: 50px;
+	margin-bottom: 30px;
+}
+
+#showcase h1 {
+	color:white;
+	text-align: left;
+	font-size: 30px;
+}
+
+#main {
+	float:left;
+	width: 70%;
+	padding:0;
+	box-sizing: border-box;
+}
+
+#sidebar {
+	float:right;
+	width: 30%;
+	background: #B7A57A;
+	color:black;
+	padding:10px;
+	box-sizing: border-box;
+}
+
+#main-footer {
+	background:#4B2E83;
+	margin-top:40px;
+	padding:5px;
+	color:white;
+	text-align: center;
+}
+
+@media(max-width:600px) {
+	#main {
+		width:100%;
+		float:none;
+	}
+	#sidebar {
+		width: 100%;
+		float:none;
+	}
+}
